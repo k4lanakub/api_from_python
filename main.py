@@ -1,5 +1,6 @@
 import requests
 import time
+import pandas as pd
 
 namee = []
 
@@ -14,3 +15,11 @@ for i in range(5):
         namee.append(data)
 
 print(namee)
+
+
+
+
+starwar = pd.DataFrame(namee, columns = ["name","height","lifespan"])
+
+
+print(starwar)
